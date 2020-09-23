@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: navanath/mydb:1
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootPass@1234 
+      MYSQL_USER: navanath
+      MYSQL_DATABASE: orderdb
+      MYSQL_PASSWORD: pass@1234 
+
+  adminer:
+    image: adminer
+    restart: always
+    environment:
+       DBURL: navanath
+       DBNAME: orderdb
+       DBUSER: navanath
+       DBPASS: pass@1234
+    ports:
+      - 8080:8080
