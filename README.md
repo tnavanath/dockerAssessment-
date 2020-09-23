@@ -1,6 +1,12 @@
 # dockerAssessment-
 This repository contains the solution for Docker and container assessment. 
+image-names from docker-hub
+1. navanath/myapp
+2. navanath/mydb
 
+
+
+Problem Statement: 
 Docker Practical Assignment
 Build a database container image "sample-db". Use these instructions.
 
